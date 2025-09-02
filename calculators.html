@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Calculator — Utility Hub</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="calculator">
+  <main class="page full">
+    <header class="hdr nav">
+      <a class="back" href="index.html">◀</a>
+      <div class="brand">Calculator</div>
+      <div class="spacer"></div>
+    </header>
+
+    <section class="card fullcard calc-card">
+      <div class="display" id="calc-display" aria-live="polite">0</div>
+
+      <div class="keys grid-4" id="calc-keys">
+        <!-- memory row -->
+        <button data-key="MC">MC</button>
+        <button data-key="MR">MR</button>
+        <button data-key="M+">M+</button>
+        <button data-key="M-">M-</button>
+
+        <!-- control row -->
+        <button data-key="AC" class="danger">AC</button>
+        <button data-key="DEL">DEL</button>
+        <button data-key="%">%</button>
+        <button data-key="/">÷</button>
+
+        <!-- digits & ops -->
+        <button data-key="7">7</button>
+        <button data-key="8">8</button>
+        <button data-key="9">9</button>
+        <button data-key="*">×</button>
+
+        <button data-key="4">4</button>
+        <button data-key="5">5</button>
+        <button data-key="6">6</button>
+        <button data-key="-">−</button>
+
+        <button data-key="1">1</button>
+        <button data-key="2">2</button>
+        <button data-key="3">3</button>
+        <button data-key="+">+</button>
+
+        <button data-key="(">(</button>
+        <button data-key="0" class="wide">0</button>
+        <button data-key=".">.</button>
+        <button data-key=")">)</button>
+
+        <button data-key="ANS" class="secondary">ANS</button>
+        <button data-key="=" class="equal wide">=</button>
+      </div>
+    </section>
+
+    <footer class="footer small">© <span id="year-calc"></span> Utility Hub</footer>
+  </main>
+
+  <script src="assets/script.js" defer></script>
+  <script>document.getElementById('year-calc').textContent = new Date().getFullYear();</script>
+</body>
+</html>
