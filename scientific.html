@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Scientific Calculator — Utility Hub</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="scientific">
+  <header class="site-header container">
+    <h1>Scientific Calculator</h1>
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="calculators.html">Calculators</a>
+      <a href="converters.html">Measurement Converters</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card calc-card">
+      <div class="display" id="sci-display" aria-live="polite">0</div>
+
+      <div class="keys sci-grid">
+        <button data-key="MC">MC</button>
+        <button data-key="MR">MR</button>
+        <button data-key="M+">M+</button>
+        <button data-key="M-">M-</button>
+        <button data-key="HIS">HIS</button>
+
+        <button data-key="C" class="danger">C</button>
+        <button data-key="⌫">⌫</button>
+        <button data-key="(">(</button>
+        <button data-key=")">)</button>
+        <button data-key=",">,</button>
+
+        <button data-key="sin">sin</button>
+        <button data-key="cos">cos</button>
+        <button data-key="tan">tan</button>
+        <button data-key="ln">ln</button>
+        <button data-key="log">log</button>
+
+        <button data-key="^">x^y</button>
+        <button data-key="√">√</button>
+        <button data-key="x²">x²</button>
+        <button data-key="!">n!</button>
+        <button data-key="π">π</button>
+
+        <button data-key="7">7</button>
+        <button data-key="8">8</button>
+        <button data-key="9">9</button>
+        <button data-key="/">÷</button>
+        <button data-key="deg">deg</button>
+
+        <button data-key="4">4</button>
+        <button data-key="5">5</button>
+        <button data-key="6">6</button>
+        <button data-key="*">×</button>
+        <button data-key="rad">rad</button>
+
+        <button data-key="1">1</button>
+        <button data-key="2">2</button>
+        <button data-key="3">3</button>
+        <button data-key="-">−</button>
+        <button data-key="ANS">ANS</button>
+
+        <button data-key="±">±</button>
+        <button data-key="0" class="zero">0</button>
+        <button data-key=".">.</button>
+        <button data-key="+">+</button>
+        <button data-key="=" class="primary">=</button>
+      </div>
+
+      <div class="history" id="sci-history" hidden>
+        <h4>History</h4>
+        <ul id="hist-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Utility Hub</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
