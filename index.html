@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Utility Hub — Calculators & Converters</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Utility Hub</h1>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="calculators.html">Calculators</a>
+        <a href="converters.html">Measurement Converters</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container hero">
+      <h2>All your calculators and measurement converters — fast & offline</h2>
+      <p class="lead">Normal calculator, advanced scientific calculator (trig, log, factorial, power), and a full unit converter with many categories and full unit names (e.g. <em>centimetre (cm)</em>, <em>hour (h)</em>).</p>
+      <div class="cta">
+        <a class="btn primary" href="calculators.html">Open Calculators</a>
+        <a class="btn" href="converters.html">Open Converters</a>
+      </div>
+    </div>
+
+    <div class="container cards">
+      <article class="card">
+        <h3>Calculators</h3>
+        <p>Standard & Scientific calculators on one page. Scientific supports sin, cos, tan, ln, log10, sqrt, x^y, factorial and memory/ANS.</p>
+        <a class="link" href="calculators.html">Open</a>
+      </article>
+
+      <article class="card">
+        <h3>Measurement Converters</h3>
+        <p>Length, Mass, Temperature, Area, Volume, Speed, Time, Angle, Energy, Power, Pressure, Data, Frequency, Fuel economy, Density — full names included.</p>
+        <a class="link" href="converters.html">Open</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Utility Hub — MIT</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
