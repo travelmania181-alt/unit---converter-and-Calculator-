@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Utility Hub — Home</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="home">
+  <main class="page full">
+    <header class="hdr">
+      <div class="brand">Utility Hub</div>
+    </header>
+
+    <section class="card center-card">
+      <h1 class="big">Tools</h1>
+      <p class="muted">Calculators & exhaustive measurement converters — mobile-first. No external libraries.</p>
+
+      <nav class="cta-grid">
+        <a class="cta" href="calculators.html">Calculators</a>
+        <a class="cta" href="converters.html">Measurement Converters</a>
+      </nav>
+    </section>
+
+    <footer class="footer">© <span id="year-home"></span> Utility Hub</footer>
+  </main>
+
+  <script>document.getElementById('year-home').textContent = new Date().getFullYear();</script>
+</body>
+</html>
