@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Measurement Converters — Utility Hub</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="converters">
+  <header class="site-header container">
+    <h1>Measurement Converters</h1>
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="calculators.html">Calculators</a>
+      <a href="converters.html" class="active">Measurement Converters</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card converter-card">
+      <div class="converter-controls">
+        <label>Category
+          <select id="category"></select>
+        </label>
+        <label>From Unit
+          <select id="fromUnit"></select>
+        </label>
+        <button id="swap" class="btn">⇄ Swap</button>
+        <label>To Unit
+          <select id="toUnit"></select>
+        </label>
+      </div>
+
+      <div class="io-grid">
+        <div>
+          <label>Value</label>
+          <input type="number" id="fromValue" placeholder="Enter value">
+        </div>
+        <div>
+          <label>Result</label>
+          <input type="text" id="toValue" readonly>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="convertBtn" class="btn primary">Convert</button>
+        <button id="copyBtn" class="btn">Copy Result</button>
+        <button id="clearBtn" class="btn">Clear</button>
+      </div>
+
+      <details class="tips"><summary>Tips</summary>
+        <ul><li>Press Enter to convert. Use Swap to switch From/To.</li></ul>
+      </details>
+    </section>
+
+    <section class="card">
+      <h3>Supported Categories (full names)</h3>
+      <p class="muted">Length (metre, kilometre, centimetre, millimetre, micrometre, nanometre, mile, yard, foot, inch, nautical mile), Mass (kilogram, gram, milligram, microgram, tonne, pound, ounce), Temperature (Celsius, Fahrenheit, Kelvin), Area (square metre, hectare, acre), Volume (cubic metre, litre, millilitre, cubic centimetre, gallon US), Speed (metre per second, kilometre per hour, mile per hour, knot), Time (second, minute, hour, day, week), Angle (degree, radian, gradian), Energy (joule, kilojoule, calorie, kilocalorie, watt-hour), Power (watt, kilowatt, horsepower), Pressure (pascal, kilopascal, bar, atmosphere, psi), Data (bit, byte, kilobyte, kibibyte, megabyte, mebibyte, gigabyte), Frequency (hertz, kilohertz, megahertz), Fuel Economy (litre per 100 kilometre, kilometre per litre, miles per gallon US), Density (kilogram per cubic metre, gram per cubic centimetre).</p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Utility Hub</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
