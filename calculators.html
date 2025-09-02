@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculators — Utility Hub</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="calculators">
+  <header class="site-header container">
+    <h1>Calculators</h1>
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="calculators.html" class="active">Calculators</a>
+      <a href="converters.html">Measurement Converters</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Choose Calculator</h2>
+      <div class="grid-cta">
+        <a class="btn" href="normal.html">Normal Calculator</a>
+        <a class="btn primary" href="scientific.html">Scientific Calculator</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Utility Hub</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
