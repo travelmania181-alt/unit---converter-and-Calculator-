@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculators — Utility Hub</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="calculators">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Utility Hub</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="calculators.html" class="active">Calculators</a>
+        <a href="converters.html">Measurement Converters</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="tabs">
+        <button class="tab active" data-tab="basic-tab">Normal Calculator</button>
+        <button class="tab" data-tab="scientific-tab">Scientific Calculator</button>
+      </div>
+
+      <!-- BASIC CALC -->
+      <section id="basic-tab" class="tab-panel active">
+        <div class="calculator">
+          <div class="display" id="basic-display">0</div>
+          <div class="buttons" data-calc="basic">
+            <button class="clear" data-key="C">C</button>
+            <button data-key="MC">MC</button>
+            <button data-key="MR">MR</button>
+            <button data-key="M+">M+</button>
+
+            <button data-key="7">7</button>
+            <button data-key="8">8</button>
+            <button data-key="9">9</button>
+            <button class="operator" data-key="/">÷</button>
+
+            <button data-key="4">4</button>
+            <button data-key="5">5</button>
+            <button data-key="6">6</button>
+            <button class="operator" data-key="*">×</button>
+
+            <button data-key="1">1</button>
+            <button data-key="2">2</button>
+            <button data-key="3">3</button>
+            <button class="operator" data-key="-">−</button>
+
+            <button data-key="0" class="wide">0</button>
+            <button data-key=".">.</button>
+            <button class="equal" data-key="=">=</button>
+            <button class="operator" data-key="+">+</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCIENTIFIC CALC -->
+      <section id="scientific-tab" class="tab-panel">
+        <div class="calculator">
+          <div class="calc-top">
+            <div class="display" id="sci-display">0</div>
+            <div class="angle-toggle">Mode: <button id="angleMode">DEG</button></div>
+          </div>
+          <div class="buttons sci-buttons" data-calc="sci">
+            <button class="clear" data-key="C">C</button>
+            <button data-key="MC">MC</button>
+            <button data-key="MR">MR</button>
+            <button data-key="M+">M+</button>
+            <button data-key="M-">M-</button>
+
+            <button data-key="sin">sin</button>
+            <button data-key="cos">cos</button>
+            <button data-key="tan">tan</button>
+            <button data-key="ln">ln</button>
+            <button data-key="log">log</button>
+
+            <button data-key="(">(</button>
+            <button data-key=")">)</button>
+            <button data-key="^">x^y</button>
+            <button data-key="√">√</button>
+            <button data-key="x²">x²</button>
+
+            <button data-key="7">7</button>
+            <button data-key="8">8</button>
+            <button data-key="9">9</button>
+            <button class="operator" data-key="/">÷</button>
+            <button data-key="!">n!</button>
+
+            <button data-key="4">4</button>
+            <button data-key="5">5</button>
+            <button data-key="6">6</button>
+            <button class="operator" data-key="*">×</button>
+            <button data-key="π">π</button>
+
+            <button data-key="1">1</button>
+            <button data-key="2">2</button>
+            <button data-key="3">3</button>
+            <button class="operator" data-key="-">−</button>
+            <button data-key="ANS">ANS</button>
+
+            <button data-key="±">±</button>
+            <button data-key="0" class="wide">0</button>
+            <button data-key=".">.</button>
+            <button class="equal" data-key="=">=</button>
+            <button data-key="%">%</button>
+          </div>
+          <div class="history" id="sci-history" hidden>
+            <h4>History</h4>
+            <ul id="hist-list"></ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year2"></span> Utility Hub</small>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
