@@ -1,0 +1,203 @@
+/* ============================
+   Global Styles
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ============================
+   Header & Navigation
+============================ */
+header {
+  background: #3f51b5;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ============================
+   Main Content
+============================ */
+main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ============================
+   Calculator Styles
+============================ */
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.display {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+}
+
+button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #e0e7ff;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #c7d2fe;
+  transform: scale(1.05);
+}
+
+button.operator {
+  background: #fbbf24;
+  color: white;
+}
+
+button.operator:hover {
+  background: #f59e0b;
+}
+
+button.equal {
+  background: #22c55e;
+  color: white;
+  grid-column: span 2;
+}
+
+button.equal:hover {
+  background: #16a34a;
+}
+
+button.clear {
+  background: #ef4444;
+  color: white;
+}
+
+button.clear:hover {
+  background: #dc2626;
+}
+
+/* ============================
+   Tabs (Standard / Scientific)
+============================ */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #e5e7eb;
+  transition: all 0.3s;
+}
+
+.tab.active {
+  background: #3f51b5;
+  color: white;
+}
+
+.tab:hover {
+  background: #cbd5e1;
+}
+
+/* ============================
+   Converter Styles
+============================ */
+.converter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+select,
+input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.result-box {
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ============================
+   Footer
+============================ */
+footer {
+  background: #3f51b5;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
