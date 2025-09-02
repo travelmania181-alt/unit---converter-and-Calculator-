@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Converter — Utility Hub</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="converter">
+  <main class="page full">
+    <header class="hdr nav">
+      <a class="back" href="index.html">◀</a>
+      <div class="brand">Converter</div>
+      <div class="spacer"></div>
+    </header>
+
+    <section class="card fullcard converter-card">
+      <label class="label">From unit
+        <select id="fromUnit"></select>
+      </label>
+
+      <label class="label">To unit
+        <select id="toUnit"></select>
+      </label>
+
+      <label class="label">Value
+        <input id="fromValue" type="number" inputmode="decimal" placeholder="Enter value">
+      </label>
+
+      <div class="row actions compact">
+        <button id="convertBtn" class="btn primary">Convert</button>
+        <button id="swapBtn" class="btn">Swap</button>
+        <button id="copyBtn" class="btn">Copy</button>
+      </div>
+
+      <div class="result-box" id="resultBox">Result: —</div>
+    </section>
+
+    <footer class="footer small">© <span id="year-conv"></span> Utility Hub</footer>
+  </main>
+
+  <script src="assets/script.js" defer></script>
+  <script>document.getElementById('year-conv').textContent = new Date().getFullYear();</script>
+</body>
+</html>
